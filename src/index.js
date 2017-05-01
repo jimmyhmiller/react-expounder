@@ -57,19 +57,19 @@ export class Expoundable extends Component {
   opened = (link) => this.state.opened[link]
 
   toggle = (link) => {
-  	this.setState({
-  		opened: {
-  			...this.state.opened,
-  			[link]: !this.state.opened[link],
-  		}
-  	})
+    this.setState({
+      opened: {
+        ...this.state.opened,
+        [link]: !this.state.opened[link],
+      }
+    })
   }
 
   addOpen = (link) => {
     this.setState({
       opened: {
-      	...this.state.opened,
-      	[link]: true,
+        ...this.state.opened,
+        [link]: true,
       }
     })
   }
@@ -94,9 +94,9 @@ export class ExpoundSelf extends Component {
   }
 
   toggle = () => {
-  	this.setState({
-			hidden: !this.state.hidden
-  	})
+    this.setState({
+      hidden: !this.state.hidden
+    })
   }
 
   show = () => {
@@ -111,8 +111,8 @@ export class ExpoundSelf extends Component {
     return (
       <span>
         <span style={{borderBottom: dashed}} onClick={this.props.collapsible ? this.toggle : this.show}>
-        	{this.props.title}
-      	</span>
+          {this.props.title}
+        </span>
         <span style={{display}}>{this.props.children}</span>
       </span>
     );

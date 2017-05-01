@@ -9,10 +9,10 @@
 import { Expoundable, Expound, Link } from 'react-expounder';
 
 const Info = () => 
-	<Expoundable>
-		Click <Link expound="more">here</Link> for more info.
-		<Expound expound="more">Some extra information.</Expound>
-	</Expoundable>
+  <Expoundable>
+    Click <Link expound="more">here</Link> for more info.
+    <Expound expound="more">Some extra information.</Expound>
+  </Expoundable>
 ```
 
 ### Install
