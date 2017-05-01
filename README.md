@@ -1,16 +1,29 @@
-# react-expounder
+# React Expounder
 
-[![Travis][build-badge]][build]
 [![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
 
-Describe react-expounder here.
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+### Example
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```javascript
+import { Expoundable, Expound, Link } from 'react-expounder';
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+const Info = () => 
+	<Expoundable>
+		Click <Link expound="more">here</Link> for more info.
+		<Expound expound="more">Some extra information.</Expound>
+	</Expoundable>
+```
+
+### Install
+```bash
+npm install --save react-expounder
+```
+
+###Special Thanks
+
+Skorokithakis for making the [library](https://github.com/skorokithakis/expounder) this is based on.
+
+
+[npm-badge]: https://img.shields.io/npm/v/react-expounder.png?style=flat-square
+[npm]: https://www.npmjs.org/package/react-expounder
