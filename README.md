@@ -20,7 +20,7 @@ const Info = () =>
 npm install --save react-expounder
 ```
 
-###Special Thanks
+### Special Thanks
 
 Skorokithakis for making the [library](https://github.com/skorokithakis/expounder) this is based on.
 
